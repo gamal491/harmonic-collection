@@ -6,9 +6,9 @@
 p{font-family: Georgia, 'Times New Roman', Times, serif;}
 
 .box{
-    width: 200px;
-    height: 100px;
-    background-color: rgb(153, 176, 235);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(187, 205, 249, 0.77);
     border: none;
     padding: 10px;
     margin: 10px;
