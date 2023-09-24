@@ -1,0 +1,15 @@
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+p{font-family: Georgia, 'Times New Roman', Times, serif;}
+
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(153, 176, 235);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+  }
