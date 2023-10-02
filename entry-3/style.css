@@ -5,18 +5,10 @@
 
 p{font-family: Georgia, 'Times New Roman', Times, serif;}
 
-.box{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(187, 205, 249, 0.77);
-    border: none;
-    padding: 10px;
-    margin: 10px;
-  }
-#half {
-    color:rgba(22, 20, 133, 0.77);
-}
 
+#waningg {
+    color: rgba(22, 20, 133, 0.77);
+}
 .header{ 
     overflow: hidden;
     background-color:dar;
