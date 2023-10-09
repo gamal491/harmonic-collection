@@ -22,7 +22,12 @@ p{font-family: Georgia, 'Times New Roman', Times, serif;}
     background-color:dar;
     padding: 10px;
 }
-
+table:hover 
+p a:hover{
+    text-decoration: none;
+    color:beige
+    transition: 1s ease
+}
 .homepage{color: white;}
 
 .history{https://gamal491.github.io/harmonic-collection/entry-2/index.html
