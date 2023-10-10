@@ -11,17 +11,25 @@ p{
     color: rgba(22, 20, 133, 0.77);
 }
 
+.text {
+    cursor: pointer;
+}
+.text:hover {
+    color: blue
+    
+}
+
 .img {
     position:absolute;
-    opacity: 0px;
+    opacity: 0;
     visibility: hidden;
-    transition: smooth;
+    transition: opacity 1s, ease
 }
 
 .text:hover + .img {
-    opacity: 100px;
+    opacity: 1;
     visibility: visible;
-    transition: opacity 0.3s, visibility 0s;
+    transition: opacity 1.3s, ease
 }
 
 
@@ -35,7 +43,8 @@ p{
 }
 
 .btn:hover {
-    background-color:  rgb(238, 237, 235);
+    /* background-color:  rgb(238, 237, 235); */
+    color: blue;
 }
 
 .caption {
@@ -47,14 +56,14 @@ p{
     background-color: rgba(22, 20, 133, 0.77);
     padding: 5px 10px;
     border-radius: 5px;
-    opacity: 0px;
-    visibility: visible;
-    transition:opacity 0.3s; visibility 0s 0.3s;
+    opacity: 0;
+    /* visibility: none; */
+    transition: opacity 1.3s; 
+    /* visibility 0s 0.3s; */
 }
 
-.btn:hover + .caption {
+.btn:hover .caption {
     position: absolute;
-    opacity: 1px;
-    visibility: visible;
-    transition: opacity 0.3s, visibility 0s;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
