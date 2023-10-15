@@ -1,0 +1,42 @@
+.box{
+    display:flex;
+    align-items:flex-end;
+    width: 100%;
+    height: 100%;
+    border: black;
+    border-width: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+.my-element {
+    display: flex;
+  }
+
+body {
+    background-color: lavender; 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid: gap 10px;
+    margin: auto;
+}
+
+.grid-item{
+    display:flex;
+    align-items:flex-start;
+}
+
+.grid-item img{
+    width: 300px;
+    height: 300px;
+}
+  
+
+
+
