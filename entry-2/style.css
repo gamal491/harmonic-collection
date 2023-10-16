@@ -13,23 +13,48 @@ p{font-family: Georgia, 'Times New Roman', Times, serif;}
     padding: 10px;
     margin: 10px;
   }
-#half {
-    color:rgba(22, 20, 133, 0.77);
-}
 
 .header{ 
     overflow: hidden;
     background-color:dar;
     padding: 10px;
 }
-table:hover 
+
 p a:hover{
     text-decoration: none;
-    color:beige
+    color:beige;
     transition: 1s ease
 }
-.homepage{color: white;}
+
+a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #ff4500; }
+
+.btn:hover {
+    text-underline-position: auto;
+}
+
+.newmoon{#
+}
+
+.waxingcrescent{#
+}
+
+.firstquarter{https://gamal491.github.io/harmonic-collection/entry-2/index.html
+}
+
+.waxinggibbous{#
+}
+
+.fullmoon{#}
+
+.waninggibbous{https://gamal491.github.io/harmonic-collection/entry-3/
+}
+
+.thirdquarter{#}
+
+.waningcrescent{https://gamal491.github.io/harmonic-collection/entry-4/index.html
+}
 
 .history{https://gamal491.github.io/harmonic-collection/entry-2/index.html
 }
-
