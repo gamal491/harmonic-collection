@@ -25,7 +25,9 @@ p a:hover{
     color:beige;
     transition: 1s ease
 }
-
+a{
+    text decoration:none;
+}
 a:hover {
     text-decoration: underline; /* Adds underline on hover */
     color: #ff4500; }
@@ -48,7 +50,7 @@ a:hover {
 
 .fullmoon{#}
 
-.waninggibbous{https://gamal491.github.io/harmonic-collection/entry-3/
+.waninggibbous{https://gamal491.github.io/harmonic-collection/entry-3/index.html
 }
 
 .thirdquarter{#}

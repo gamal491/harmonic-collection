@@ -24,6 +24,7 @@ p{
 
 .btn {
     background-color: none;
+    color: rgba(22, 20, 133, 0.77);
     border: none;
     cursor: pointer;
     border-radius: 5px;

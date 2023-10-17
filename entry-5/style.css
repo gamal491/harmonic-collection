@@ -12,9 +12,6 @@
     max-width: 90%;
     margin: auto;
 }
-.my-element {
-    display: flex;
-  }
 
 body {
     background-color: lavender; 
@@ -31,6 +28,7 @@ body {
     display:flex;
     align-items:flex-start;
     flex-wrap:wrap;
+    position: relative;
 }
 
 .grid-item img{
@@ -38,7 +36,58 @@ body {
     height: 300px;
 }
 
+.image{
+    display:block;
+    width:100%;
+}
 
+.entry-one{http://gamal491.github.io/harmonic-collection/entry-1/index.html}
+.entry-two{http://gamal491.github.io/harmonic-collection/entry-2/index.html}
+.entry-three{http://gamal491.github.io/harmonic-collection/entry-3/index.html}
+.entry-four{http://gamal491.github.io/harmonic-collection/entry-4/index.html}
+.entry-six{}
+.entry-seven{}
+.entry-eight{}
+.entry-nine{}
+  
+*{
+    box-sizing:border-box;
+    font-family: serif;
+}
+.image__title{
+    width:300px;
+    height:300px;
+    top:0;
+    left:0;
+    position:absolute;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    opacity:0;
+    transition:0.6s;
+}
+
+.image__title:hover{
+    opacity:1;
+}
+
+.image__title h2{
+    font: size 15px;
+    color:white;
+    position: center;
+    align-items:center;
+}
+
+.image__title > *{
+    transform:translateY(25px);
+    transition: transform 0.6s;
+}
+
+.image__title:hover > *{
+    transform:translateY(0px);
+}
   
 
 
