@@ -20,43 +20,18 @@ p{font-family: Georgia, 'Times New Roman', Times, serif;}
     padding: 10px;
 }
 
-p a:hover{
+p h4:hover{
     text-decoration: none;
     color:beige;
     transition: 1s ease
 }
-a{
+h4{
     text decoration:none;
 }
-a:hover {
+h4:hover {
     text-decoration: underline; /* Adds underline on hover */
     color: #ff4500; }
 
 .btn:hover {
     text-underline-position: auto;
-}
-
-.newmoon{#
-}
-
-.waxingcrescent{#
-}
-
-.firstquarter{https://gamal491.github.io/harmonic-collection/entry-2/index.html
-}
-
-.waxinggibbous{#
-}
-
-.fullmoon{#}
-
-.waninggibbous{https://gamal491.github.io/harmonic-collection/entry-3/index.html
-}
-
-.thirdquarter{#}
-
-.waningcrescent{https://gamal491.github.io/harmonic-collection/entry-4/index.html
-}
-
-.history{https://gamal491.github.io/harmonic-collection/entry-2/index.html
 }

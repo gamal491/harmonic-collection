@@ -7,24 +7,17 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.text {
-    cursor: pointer;
-}
-.text:hover {
-    color: blue
-}
-
 .text:hover{
     opacity: 1;
     visibility: visible;
     transition: opacity 1.3s, ease;
-    position: absolute
+    position: absolute;
 }
 
 
 .btn {
     background-color: none;
-    color: rgba(22, 20, 133, 0.77);
+    color: none;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -32,8 +25,8 @@ p{
 }
 
 .btn:hover {
-    /* background-color:  rgb(238, 237, 235); */
-    color: blue;
+    color: red;
+    opacity:1;
 }
 
 .caption {
