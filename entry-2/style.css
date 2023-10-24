@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(238, 237, 235); ;
+}
 .container{
     max-width: 500px;
     margin: 0 auto;
@@ -20,15 +23,15 @@ p{font-family: Georgia, 'Times New Roman', Times, serif;}
     padding: 10px;
 }
 
-p h4:hover{
+p :hover{
     text-decoration: none;
     color:beige;
     transition: 1s ease
 }
-h4{
-    text decoration:none;
+a{
+    text-decoration:none;
 }
-h4:hover {
+a:hover {
     text-decoration: underline; /* Adds underline on hover */
     color: #ff4500; }
 
