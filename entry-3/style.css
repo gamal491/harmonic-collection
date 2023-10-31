@@ -1,13 +1,12 @@
 body{
-    background-color: rgb(238, 237, 235); ;
+    background-color: lavender;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container{
     max-width: 500px;
     margin: 0 auto;
 }
-
-p{font-family: Georgia, 'Times New Roman', Times, serif;}
 
 
 .header{ 
@@ -22,3 +21,13 @@ a{
 a:hover {
     text-decoration: underline; /* Adds underline on hover */
     color: #ff4500; }
+
+.smaller-size{
+    font-size: 14px;
+} 
+
+h1{
+    display:flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}

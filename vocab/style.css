@@ -1,0 +1,11 @@
+body{
+    line-height: 2.2em; /* increasing line height */
+}
+
+h1{
+    font-size: 4em  /* wanted to further increase the font-size */
+}
+
+a{
+    text-decoration: underline; /* Adds underline on hover */
+    color: rgb(68, 117, 243); }
