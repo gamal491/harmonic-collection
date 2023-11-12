@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Lunar Phases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1; maximum-scale=1" />
+    <meta name="description" content="A collection of nights I wish to remember.">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="overall"> <!--parent header-->
+      <div class="scroll-container" id="scrollContainer"> <!--for scroll-->
+        <ul>
+           <!-- Each item in the vertical side-scrolling bar -->
+          <li><a href="https://roeleveld.notion.site/Core-1-Interaction-Studio-Section-C-4a1bce87f8d84101b957d4e31c47ec56">
+            <img class="scroll-content" src="newmoon.png"></a></li>
+          <li><a href="#">
+            <img class="scroll-content"src="waxingcrescent.png"></a></li>
+          <li><a href="#">
+            <img class="scroll-content"src="firstquarter.png"></a></li>
+          <li><a href="#">
+            <img class="scroll-content"src="waxinggibbous.png"></a></li>
+          <li><a href="#">
+            <img class="scroll-content"src="fullmoon.png"></a></li>
+          <li><a href="#">
+            <img class="scroll-content"src="waninggibbous.png"></a></li>
+          <li><a href="#">
+            <img class="scroll-content"src="thirdquarter.png"></a></li>
+          <li><a href="#">
+            <img class="scroll-content"src="waningcrescent.png"></a></li>
+        </ul>
+      </div>
+    <div id="main-column">
+      <div class="text">
+        <div class="content">
+          <article>
+          <div class="byline">Lunar Phases</div>
+<div class="caption"><i>a collection of nights I wish to remember</i></div>
+          </article>
+        </div>
+        </div>
+        </div>
+  
+    
+    <!-- JavaScript added here for endless vertical side-scrolling bar-->
+    <script>
+  // Function to add items when the user scrolls
+  function addItems() {
+    const container = document.getElementById('scrollContainer');
+
+    for (let i = 9; i <= 16; i++) { //starting from 9, adding after last moon phase
+      //creates and appends new items
+      const newItem = document.createElement('li'); //added items will be created within the same list scroll container
+      newItem.className = 'scroll-content';
+
+      const newLink = document.createElement('a'); //added an (a element) around the image, to make images clickable.
+      newLink.href = '#'
+
+      const newImage = document.createElement('img');
+
+      //used ChatGPT for how to currectly add new images with different sources.
+      if (i ===  9) { 
+      newImage.src = `newmoon.png`;
+      } else if (i ===10) {
+      newImage.src = `waxingcrescent.png`;
+      } else if (i === 11) {
+      newImage.src = `firstquarter.png`;
+      } else if (i === 12) {
+      newImage.src = `waxinggibbous.png`;
+      } else if (i === 13) {
+      newImage.src = `fullmoon.png`;
+      } else if (i === 14) {
+      newImage.src = `waninggibbous.png`;
+      } else if (i === 15) {
+      newImage.src = `thirdquarter.png`;
+      } else if (i === 16) {
+      newImage.src = `waningcrescent.png`;
+      }
+    
+      newLink.appendChild(newImage);
+      newItem.appendChild(newLink);
+      container.querySelector('ul').appendChild(newItem); // Append the new item within the existing container
+      }
+  }
+  
+   // Add initial items
+   addItems();
+
+  // Attach the function to the scroll event
+  document.getElementById('scrollContainer').addEventListener('scroll', function() {
+    const container = this;
+
+    // Check if the user has reached the bottom of the container
+    if (container.scrollTop + container.clientHeight >= container.scrollHeight) {
+      // Add more items when the bottom is reached
+      addItems();
+    }
+  });
+    </script>
+    </div>
+    </body>
+  </html>

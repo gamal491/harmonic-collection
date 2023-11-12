@@ -1,0 +1,14 @@
+img{
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    img{ 
+    width:"200px";
+    height:"200px";}
+    }
+
+@media (max-height: 768px) {
+    img{ 
+        width:"200px";
+        height:"200px";
+        }}
