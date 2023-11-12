@@ -44,8 +44,8 @@ body {
 
 img {
   margin: 0; /* Reset margin */
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
 }
 
 .text {
@@ -91,10 +91,21 @@ img {
   @media only screen and (max-width: 480px) {
     #main-column .text {
       font-size: 17px;
-      line-height: 19px;
+      line-height: 19px;}
     }
-    }
+    
     ul.index {
       margin-left: -.5em;
     }
-  
+
+@media (max-width: 357px) {
+    img{ 
+      width:auto;
+      height:auto;}
+    }
+    
+  @media (max-height: 357px) {
+      img{ 
+        width:"50px";
+        height:"50px";
+        }}
