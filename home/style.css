@@ -55,23 +55,23 @@ img {
     color: azure;
   }
 
-  #main-column {
+.main-column {
     position:absolute;
     left:20%;
     width:80%;
     height:100%;
     overflow-y:scroll;
     -webkit-overflow-scrolling:touch;
-    /*-moz-box-sizing: border-box; /*used chatGPT 
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;*/
   }
   
-  #main-column .text p, #main-column .text ul {
+  .main-column .text p, #main-column .text ul {
     max-width: 640px;
   }
+  div{
+    display: block;
+  }
   
-  #main-column {
+  .main-column {
     padding-top:1em;
     font-size: 21px;
     padding-left:15px;
@@ -79,15 +79,20 @@ img {
     box-sizing:border-box;
   }
 
-  #main-column .byline {
+  .main-column .byline {
     font-weight: bold;
   }
 
-  #main-column .caption {
+  .main-column .caption {
     font-size: 17px;
     margin-top: .25em;
   }
   
+
+  #content
+
+  .article 
+
   @media only screen and (max-width: 480px) {
     #main-column .text {
       font-size: 17px;

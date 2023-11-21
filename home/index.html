@@ -14,11 +14,10 @@
       <div class="scroll-container" id="scrollContainer"> <!--for scroll-->
         <ul>
            <!-- Each item in the vertical side-scrolling bar -->
-          <li><a href="https://gamal491.github.io/harmonic-collection/twilight/">
-            <img class="scroll-content" src="newmoon.png"></a></li>
+          <li><a href="https://gamal491.github.io/harmonic-collection/twilight/" onclick="showContent('twilight')"><img class="scroll-content" src="newmoon.png"></a></li>
           <li><a href="#">
             <img class="scroll-content"src="waxingcrescent.png"></a></li>
-          <li><a href="https://gamal491.github.io/harmonic-collection/firstquarter/">
+          <li><a href="#">
             <img class="scroll-content"src="firstquarter.png"></a></li>
           <li><a href="#">
             <img class="scroll-content"src="waxinggibbous.png"></a></li>
@@ -32,18 +31,21 @@
             <img class="scroll-content"src="waningcrescent.png"></a></li>
         </ul>
       </div>
-    <div id="main-column">
+
+    <div class="main-column" id="mainColumn">
       <div class="text">
         <div class="content">
-          <article>
-          <div class="byline">Lunar Phases</div>
-<div class="caption"><i>a collection of nights I wish to remember</i></div>
+          <article id="lunar-phases">
+            <div class="byline">Lunar Phases</div>
+    <p><i>a collection of nights I wish to remember</i></p>
           </article>
+
+        
         </div>
         </div>
         </div>
   
-    
+
     <!-- JavaScript added here for endless vertical side-scrolling bar-->
     <script>
   // Function to add items when the user scrolls
@@ -98,6 +100,21 @@
       addItems();
     }
   });
+
+
+
+  // separate javascript for fixed side column
+  
+    function showContent(phase) {
+      var content = document.getElementById('mainColumn');
+      // Replace content based on the moon phase clicked
+      if (phase === 'twilight') {
+        content.innerHTML = "https://gamal491.github.io/harmonic-collection/twilight/";
+      } else if (phase === 'waxingcrescent') {
+        content.innerHTML = "<h2>Full Moon</h2><p>Description of the full moon phase.</p>";
+      }
+      // Add more conditions for other moon phases 
+    }
     </script>
     </div>
     </body>
