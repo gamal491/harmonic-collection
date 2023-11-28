@@ -13,24 +13,27 @@
     <div id="overall"> <!--parent header-->
       <div class="scroll-container" id="scrollContainer"> <!--for scroll-->
         <ul>
-           <!-- Each item in the vertical side-scrolling bar -->
-          <li><a href="https://gamal491.github.io/harmonic-collection/twilight/" onclick="showContent('twilight')"><img class="scroll-content" src="newmoon.png"></a></li>
-          <li><a href="#">
-            <img class="scroll-content"src="waxingcrescent.png"></a></li>
-          <li><a href="#">
-            <img class="scroll-content"src="firstquarter.png"></a></li>
-          <li><a href="#">
-            <img class="scroll-content"src="waxinggibbous.png"></a></li>
-          <li><a href="#">
-            <img class="scroll-content"src="fullmoon.png"></a></li>
-          <li><a href="#">
-            <img class="scroll-content"src="waninggibbous.png"></a></li>
-          <li><a href="#">
-            <img class="scroll-content"src="thirdquarter.png"></a></li>
-          <li><a href="#">
-            <img class="scroll-content"src="waningcrescent.png"></a></li>
-        </ul>
-      </div>
+          <!-- Each item in the vertical side-scrolling bar -->
+          <li><a href="../home/index.html">
+            <img class="scroll-content"src="../home/newmoon.png"></a></li>
+         <li><a href="../waxingcrescent/index.html">
+           <img class="scroll-content"src="../home/waxingcrescent.png"></a></li>
+         <li><a href="../entry-5/index.html">
+           <img class="scroll-content"src="../home/firstquarter.png"></a></li>
+         <li><a href="../waxinggibbous/index.html">
+           <img class="scroll-content"src="../home/waxinggibbous.png"></a></li>
+         <li><a href="../full-moon/index.html">
+           <img class="scroll-content"src="../home/fullmoon.png"></a></li>
+         <li><a href="../entry-6/index.html">
+           <img class="scroll-content"src="../home/waninggibbous.png"></a></li>
+         <li><a href="../thirdquarter/index.html">
+           <img class="scroll-content"src="../home/thirdquarter.png"></a></li>
+         <li><a href="../waning-crescent/index.html">
+           <img class="scroll-content"src="../home/waningcrescent.png"></a></li>
+         <li><a href="../twilight/index.html">
+            <img class="scroll-content"src="../home/newmoon.png"></a></li>
+       </ul>
+   </div>
 
     <div class="main-column" id="mainColumn">
       <div class="text">
@@ -49,18 +52,18 @@
     <!-- JavaScript added here for endless vertical side-scrolling bar-->
     <script>
   // Function to add items when the user scrolls
-  function addItems() {
-    const container = document.getElementById('scrollContainer');
+  //function addItems() {
+  // const container = document.getElementById('scrollContainer');
 
-    for (let i = 9; i <= 16; i++) { //starting from 9, adding after last moon phase
-      //creates and appends new items
-      const newItem = document.createElement('li'); //added items will be created within the same list scroll container
-      newItem.className = 'scroll-content';
+  //  for (let i = 9; i <= 16; i++) { //starting from 9, adding after last moon phase
+  //    //creates and appends new items
+  //    const newItem = document.createElement('li'); //added items will be created within the same list scroll container
+  //   newItem.className = 'scroll-content';
 
-      const newLink = document.createElement('a'); //added an (a element) around the image, to make images clickable.
-      newLink.href = '#'
+  //    const newLink = document.createElement('a'); //added an (a element) around the image, to make images clickable.
+  //    newLink.href = '#'
 
-      const newImage = document.createElement('img');
+  //   const newImage = document.createElement('img');
 
       //used ChatGPT for how to currectly add new images with different sources.
       if (i ===  9) { 
@@ -84,8 +87,7 @@
       newLink.appendChild(newImage);
       newItem.appendChild(newLink);
       container.querySelector('ul').appendChild(newItem); // Append the new item within the existing container
-      }
-  }
+      
   
    // Add initial items
    addItems();
