@@ -42,9 +42,9 @@ body {
     background-color: rgb(11, 11, 21); 
 }
 
-img{
+#main-column img{
     height:100%;
-    width:100%;
+    width: 100%
 }
 
 @media (max-width: 768px) {
