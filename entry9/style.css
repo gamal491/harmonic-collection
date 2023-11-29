@@ -52,13 +52,11 @@ html {
     font-size: 17px;
     margin-top: .25em;
   }
-  
-  h1{
-    display:flex;
-    justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: aliceblue;
+
+  #main-column .img {
+    max-width:85%;
   }
+
   p{
     color:aliceblue;
   }
@@ -79,12 +77,10 @@ html {
     color: aliceblue;
   }
   
-  
   img{
     display:block;
-    height: 100%;
-    width:100%;
   }
+
   @media (max-width: 768px) {
     body {
       font-size: 30px;}
@@ -99,24 +95,3 @@ html {
         background:rgba(0,0,0,0.7);
         display:flex;
     }}
-  
-  .image__title {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-  }
-  
-  .image__title h2{
-    font-size: 18px;
-    color:white;
-    text-align:center;
-  }
-  

@@ -89,10 +89,6 @@ img {
   }
   
 
-  #content
-
-  .article 
-
   @media only screen and (max-width: 480px) {
     #main-column .text {
       font-size: 17px;
