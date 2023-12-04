@@ -22,9 +22,9 @@ body {
 }
 
 .scroll-container {
-  position: absolute; /* Stays in place to the left */
+  /* position: absolute; Stays in place to the left */
   left: 0;
-  min-width: 10%;
+  min-width: fit-content;
   height: 100%;
   overflow-x: hidden !important; /* Can't scroll horizontally */
   overflow-y: scroll;
@@ -57,7 +57,7 @@ img {
   }
 
 .main-column {
-    position:absolute;
+    /* position:absolute; */
     left:10%;
     width:80%;
     height:100%;
@@ -88,8 +88,15 @@ img {
     font-size: 17px;
     margin-top: .25em;
   }
+  .overall{
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    gap:10px;
+  }
   
-
+/* 
   @media only screen and (max-width: 480px) {
     #main-column .text {
       font-size: 17px;
@@ -110,4 +117,4 @@ img {
       img{ 
         width:50px;
         height:50px;
-        }}
+        }} */

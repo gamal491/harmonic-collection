@@ -114,36 +114,29 @@ max-width:85%;
   }
 
 
-  .image__title {
-    width: 85%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: 0.6s;
+@keyframes spinType {
+  0% {
+  }
+  60% {
+  }
+  100% {
+  }
 }
 
-.image__title:hover{
-    opacity:1;
+@keyframes spinType {
+  0% {
+    transform: rotate(0.5turn);
+  }
+  60% {
+    transform: rotate(0.7turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
-.image__title h2{
-    font-size: 18px;
-    color:white;
-    text-align:center;
-}
-
-.image__title > *{
-    transform:translateY(25px);
-    transition: transform 0.6s;
-}
-
-.image__title:hover > *{
-    transform:translateY(0px);
+.grid-item img {
+  animation-duration: 2s;
+  animation-name: spinType;
+  transition-duration: infinite;
 }
