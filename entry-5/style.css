@@ -110,7 +110,7 @@ a{
 }
 
 .p2 {
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
   top: 30%; /* Adjust the position for overlapping */
   left: 80%; /* Adjust the position for overlapping */
   transform: translate(-50%, -50%);
@@ -118,7 +118,7 @@ a{
 }
 
 .p3 {
-  mix-blend-mode: difference;
+  mix-blend-mode: screen;
   top: 70%; /* Adjust the position for overlapping */
   left: 80%; /* Adjust the position for overlapping */
   transform: translate(-50%, -50%) ;
@@ -126,7 +126,7 @@ a{
 }
 
 .p4 {
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
   top: 40%; /* Adjust the position for overlapping */
   left: 50%; /* Adjust the position for overlapping */
   transform: translate(-50%, -50%) ;
@@ -134,7 +134,7 @@ a{
 }
 
 .p5 {
-  mix-blend-mode: difference;
+  mix-blend-mode: screen;
   top: 99%; /* Adjust the position for overlapping */
   left: 40%; /* Adjust the position for overlapping */
   transform: translate(-50%, -50%) ;
@@ -142,7 +142,7 @@ a{
 }
 
 .p6 {
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
   top: 10%; /* Adjust the position for overlapping */
   left: 70%; /* Adjust the position for overlapping */
   transform: translate(-50%, -50%) ;
