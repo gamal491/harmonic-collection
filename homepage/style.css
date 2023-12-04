@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+  max-width:65%;
   background-color: rgb(11, 11, 21);
 }
 
@@ -23,7 +24,7 @@ body {
 .scroll-container {
   position: absolute; /* Stays in place to the left */
   left: 0;
-  width: 20%;
+  min-width: 10%;
   height: 100%;
   overflow-x: hidden !important; /* Can't scroll horizontally */
   overflow-y: scroll;
@@ -49,7 +50,7 @@ img {
 }
 
 .text {
-    font-size: 21px;
+    font-size: 20px;
     text-decoration: none;
     margin-top: 1em;
     color: azure;
@@ -57,7 +58,7 @@ img {
 
 .main-column {
     position:absolute;
-    left:20%;
+    left:10%;
     width:80%;
     height:100%;
     overflow-y:scroll;
@@ -74,7 +75,7 @@ img {
   .main-column {
     padding-top:1em;
     font-size: 21px;
-    padding-left:15px;
+    padding-left:10px;
     padding-right:15px;
     box-sizing:border-box;
   }
