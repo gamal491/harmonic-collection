@@ -15,23 +15,41 @@
           <ul>
             <!-- Each item in the vertical side-scrolling bar -->
             <li><a href="../homepage/index.html">
-              <img class="scroll-content"src="../homepage/newmoon.png"></a></li>
-            <li><a href="../entry2/index.html">
-              <img class="scroll-content"src="../homepage/entry2.png"></a></li>
+              <img class="scroll-content"src="../homepage/newmoon.png"></a>
+              <!-- <span class="phase-name">New Moon</span> -->
+              </li>
+            <li><a href="../entry1/index.html">
+              <img class="scroll-content"src="../homepage/entry1.png"></a>
+              <!-- <span class="phase-name">Waxing Crescent</span> -->
+            </li>
             <li><a href="../entry-5/index.html">
-              <img class="scroll-content"src="../homepage/firstquarter.png"></a></li>
+              <img class="scroll-content"src="../homepage/firstquarter.png"></a>
+              <!-- <span class="phase-name">First Quarter</span> -->
+            </li>
             <li><a href="../waxinggibbous/index.html">
-              <img class="scroll-content"src="../homepage/waxinggibbous.png"></a></li>
+              <img class="scroll-content"src="../homepage/waxinggibbous.png"></a>
+              <!-- <span class="phase-name">Waxing Gibbous</span> -->
+            </li>
             <li><a href="../full-moon/index.html">
-              <img class="scroll-content"src="../homepage/fullmoon.png"></a></li>
+              <img class="scroll-content"src="../homepage/fullmoon.png"></a>
+              <span class="phase-name">Full Moon</span>
+            </li>
             <li><a href="../waning-gibbous/index.html">
-              <img class="scroll-content"src="../homepage/waninggibbous.png"></a></li>
+              <img class="scroll-content"src="../homepage/waninggibbous.png"></a>
+              <!-- <span class="phase-name">Waning Gibbous</span> -->
+            </li>
             <li><a href="../third-quarter/index.html">
-              <img class="scroll-content"src="../homepage/thirdquarter.png"></a></li>
-            <li><a href="../waning-crescent/index.html">
-              <img class="scroll-content"src="../homepage/waningcrescent.png"></a></li>
+              <img class="scroll-content"src="../homepage/thirdquarter.png"></a>
+              <!-- <span class="phase-name">Third Quarter</span> -->
+            </li>
+            <li><a href="../waning-crescent/index.html"></a>
+              <img class="scroll-content"src="../homepage/waningcrescent.png">
+              <!-- <span class="phase-name">Waning Crescent</span> -->
+            </li>
             <li><a href="../twilight/index.html">
-              <img class="scroll-content"src="../homepage/newmoon.png"></a></li>
+              <img class="scroll-content"src="../homepage/newmoon.png"></a>
+              <!-- <span class="phase-name">New Moon</span> -->
+            </li>
           </ul>
         </div>
         <div class="main-column" id="mainColumn">
@@ -65,7 +83,7 @@
       if (i ===  9) { 
       newImage.src = `newmoon.png`;
       } else if (i ===10) {
-      newImage.src = `entry2.png`;
+      newImage.src = `entry1.png`;
       } else if (i === 11) {
       newImage.src = `firstquarter.png`;
       } else if (i === 12) {
@@ -107,7 +125,7 @@
       // Replace content based on the moon phase clicked
       if (phase === 'twilight') {
         content.innerHTML = "https://gamal491.github.io/harmonic-collection/twilight/";
-      } else if (phase === 'entry2') {
+      } else if (phase === 'entry1') {
         content.innerHTML = "<h2>Full Moon</h2><p>Description of the full moon phase.</p>";
       }
       // Add more conditions for other moon phases 

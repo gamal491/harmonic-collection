@@ -12,6 +12,7 @@ body {
   height: 100%;
   max-width:100%;
   background-color: rgb(11, 11, 21);
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 /* inspo taken from "when all of my friends are on at once" page */
@@ -37,7 +38,7 @@ body {
 }
 
 .scroll-container li {
-  display: flex;
+  /* display: flex; */
   text-align: center;
   justify-content: flex-start;
   padding: 5px 5px 5px 10px; /*used from When All My Friends Are On At Once*/
@@ -67,6 +68,8 @@ img {
   
   .main-column .text p, #main-column .text ul {
     max-width: 640px;
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
   }
   div{
     display: block;
@@ -85,9 +88,11 @@ img {
   }
 
   .main-column .caption {
-    font-size: 17px;
+    font-size: 18px;
     margin-top: .25em;
+    font-family:'Courier New', Courier, monospace;
   }
+
   .overall{
     display:flex;
     flex-direction: row;
@@ -118,3 +123,5 @@ img {
         width:50px;
         height:50px;
         }} */
+
+    
