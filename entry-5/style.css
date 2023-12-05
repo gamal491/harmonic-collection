@@ -56,6 +56,8 @@ body {
     background-color: rgb(11, 11, 21); 
     font-size: 20px;
     font-style:  Georgia, 'Times New Roman', Times, serif;
+    max-width:100%;
+
 }
 
 .main{
@@ -70,7 +72,7 @@ a{
 
 .collage {
   position: relative;
-  width: 1000px; /*Adjust the width as needed */
+  width: 500px; /*Adjust the width as needed */
   height: 500px; /* Adjust the height as needed */
   margin-top:50px;
 }
