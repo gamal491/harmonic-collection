@@ -11,18 +11,20 @@ body {
   justify-content: center;
   height: 100%;
   background-color: rgb(11, 11, 21);
+  font-size: 20px;
+  font-style:  Georgia, 'Times New Roman', Times, serif;
 }
 
 .text {
-  font-size: 21px;
+  font-size: 20px;
   text-decoration: none;
   margin-top: 1em;
   color: azure;
 }
 
 #main-column {
-  position:absolute;
-  left:20%;
+  /* position:absolute; */
+  left:10%;
   width:80%;
   height:100%;
   overflow-y:scroll;
@@ -30,7 +32,7 @@ body {
 }
 
 #main-column .text p, #main-column .text ul {
-  max-width: 640px;
+  max-width: 80%;
 }
 div{
   display: block;
@@ -63,12 +65,6 @@ p{
   color:aliceblue;
 }
 
-body {
-  background-color: rgb(11, 11, 21); 
-  font-size: 20px;
-  font-style:  Georgia, 'Times New Roman', Times, serif;
-}
-
 .center{
   display:flex;
   justify-content: center;
@@ -79,31 +75,31 @@ a{
   color: aliceblue;
 }
 
-.grid{
+/* .grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
   margin: auto;
-}
+}  */
 
-.grid-item{
+/* .grid-item{
   display:flex;
   align-items:flex-start;
   flex-wrap:wrap;
   position: relative;
-}
+} */
 
-.grid-item img{
-  width: 100%;
+/* .grid-item img{
+  width: 85%;
   height: 100%;
   min-width: 250px;
-}
+} */
 
 #main-column img {
-max-width:85%;
-}
+max-width:100%;
+} 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     font-size: 30px;}
   .grid{
@@ -111,15 +107,15 @@ max-width:85%;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     margin: auto;}
-  }
+  } */
 
 
   .image__title {
     width: 85%;
-    height: 100%;
+    height: auto;
     top: 0;
     left: 0;
-    position: absolute;
+    /* position: absolute;  */
     background: rgba(0,0,0,0.7);
     display: flex;
     justify-content: center;
@@ -146,4 +142,9 @@ max-width:85%;
 
 .image__title:hover > *{
     transform:translateY(0px);
+}
+
+.image{
+  width:85%;
+  height:auto;
 }

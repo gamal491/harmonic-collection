@@ -1,35 +1,25 @@
 html {
     height: auto;
   }
-  
-body {
-    margin: 0;
-    overflow-x: hidden !important;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-color: rgb(11, 11, 21);
-  }
 
 .text {
-    font-size: 21px;
+    font-size: 20px;
     text-decoration: none;
     margin-top: 1em;
     color: azure;
   }
 
   #main-column {
-    position:absolute;
-    left:20%;
+    /* position:absolute; */
+    left:10%;
+    width:80%;
     height:100%;
     overflow-y:scroll;
     -webkit-overflow-scrolling:touch;
   }
   
   #main-column .text p, #main-column .text ul {
-    max-width: 640px;
+    max-width: 80%;
   }
   div{
     display: block;
@@ -80,7 +70,7 @@ a{
 
 .collage {
   position: relative;
-  width: 1000px; /* Adjust the width as needed */
+  width: 1000px; /*Adjust the width as needed */
   height: 500px; /* Adjust the height as needed */
   margin-top:50px;
 }
@@ -156,6 +146,9 @@ a{
     .collage{
       width: 500px; /* Adjust the width as needed */
       height: 500px; 
-    }}
+    }} 
 
-
+.image{
+  width:85%;
+  height:auto;
+}

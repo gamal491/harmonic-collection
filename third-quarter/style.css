@@ -21,7 +21,7 @@ body {
   }
 
   #main-column {
-    position:absolute;
+    /* position:absolute; */
     left:20%;
     width:80%;
     height:100%;
