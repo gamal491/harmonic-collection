@@ -26,7 +26,7 @@
            <li><a href="../waning-gibbous/index.html">
              <img class="scroll-content"src="../homepage/waninggibbous.png"></a></li>
            <li><a href="../third-quarter/index.html">
-             <img class="scroll-content"src="../homepage/thirdquarter.png"></a></li>
+             <img class="scroll-content"src="../homepage/thirdquarter.png" id="thirdq"></a></li>
            <li><a href="../waning-crescent/index.html">
              <img class="scroll-content"src="../homepage/waningcrescent.png"></a></li>
            <li><a href="../twilight/index.html">
@@ -64,5 +64,14 @@
 
         </div>
 </body>
-</html>
+
+<script>
+  let selected=document.querySelector("#thirdq")
+  let topPos=selected.offsetTop;
+
+  let scroll= document.querySelector(".scroll-container");
+  scroll.scrollTop=topPos;
+  console.log(scroll.scrollTop);
+  
+</script>
 </html>

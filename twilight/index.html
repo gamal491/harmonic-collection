@@ -31,7 +31,7 @@
            <li><a href="../waning-crescent/index.html">
              <img class="scroll-content"src="../homepage/waningcrescent.png"></a></li>
            <li><a href="../twilight/index.html">
-              <img class="scroll-content"src="../homepage/newmoon.png"></a></li>
+              <img class="scroll-content"src="../homepage/newmoon.png" id="twilight"></a></li>
          </ul>
    </div>
         <div id="main-column">
@@ -46,6 +46,16 @@
 <br>
 <br>
         </div>
+
+        <script>
+          let selected=document.querySelector("#twilight")
+          let topPos=selected.offsetTop;
+    
+          let scroll= document.querySelector(".scroll-container");
+          scroll.scrollTop=topPos;
+          console.log(scroll.scrollTop);
+          
+        </script>
+
 </body>
-</html>
 </html>

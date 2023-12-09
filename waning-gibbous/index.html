@@ -24,7 +24,7 @@
            <li><a href="../full-moon/index.html">
              <img class="scroll-content"src="../homepage/fullmoon.png"></a></li>
            <li><a href="../waning-gibbous/index.html">
-             <img class="scroll-content"src="../homepage/waninggibbous.png"></a></li>
+             <img class="scroll-content"src="../homepage/waninggibbous.png" id="waningg"></a></li>
            <li><a href="../third-quarter/index.html">
              <img class="scroll-content"src="../homepage/thirdquarter.png"></a></li>
            <li><a href="../waning-crescent/index.html">
@@ -43,7 +43,7 @@
 <br>
 <div class="grid">
         <div class="grid-item">
-            <img class="image"src="1.jpg" alt="A waning gibbous in early fall with a light blue sky."
+            <img class="image"src="1.jpg" alt="A waning gibbous in early fall with a light blue sky.">
             <div class="image__overlay">
                 <div class="image__title"><h2>October 2, 2023
                     <br>7:33 pm
@@ -54,5 +54,15 @@
         </div>      
         <br> <br> <br>
       </div>
+
+      <script>
+        let selected=document.querySelector("#waningg")
+        let topPos=selected.offsetTop;
+  
+        let scroll= document.querySelector(".scroll-container");
+        scroll.scrollTop=topPos;
+        console.log(scroll.scrollTop);
+        
+      </script>
 </body>
 </html>

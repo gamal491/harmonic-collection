@@ -20,7 +20,7 @@
            <li><a href="../entry-5/index.html">
              <img class="scroll-content"src="../homepage/firstquarter.png"></a></li>
            <li><a href="../waxinggibbous/index.html">
-             <img class="scroll-content"src="../homepage/waxinggibbous.png"></a></li>
+             <img class="scroll-content"src="../homepage/waxinggibbous.png" id="waxingg"></a></li>
            <li><a href="../full-moon/index.html">
              <img class="scroll-content"src="../homepage/fullmoon.png"></a></li>
            <li><a href="../waning-gibbous/index.html">
@@ -54,5 +54,16 @@
 <br>
 <br>
 </div>
+
+<script>
+  let selected=document.querySelector("#waxingg")
+  let topPos=selected.offsetTop;
+
+  let scroll= document.querySelector(".scroll-container");
+  scroll.scrollTop=topPos;
+  console.log(scroll.scrollTop);
+  
+</script>
+
 </body>
 </html>

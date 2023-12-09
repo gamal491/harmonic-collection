@@ -19,35 +19,35 @@
               <!-- <span class="phase-name">New Moon</span> -->
               </li>
             <li><a href="../entry1/index.html">
-              <img class="scroll-content"src="../homepage/entry1.png"></a>
+              <img class="scroll-content selected"src="../homepage/entry1.png"></a>
               <!-- <span class="phase-name">Waxing Crescent</span> -->
             </li>
             <li><a href="../entry-5/index.html">
-              <img class="scroll-content"src="../homepage/firstquarter.png"></a>
+              <img class="scroll-content selected"src="../homepage/firstquarter.png"></a>
               <!-- <span class="phase-name">First Quarter</span> -->
             </li>
             <li><a href="../waxinggibbous/index.html">
-              <img class="scroll-content"src="../homepage/waxinggibbous.png"></a>
+              <img class="scroll-content selected"src="../homepage/waxinggibbous.png"></a>
               <!-- <span class="phase-name">Waxing Gibbous</span> -->
             </li>
             <li><a href="../full-moon/index.html">
-              <img class="scroll-content"src="../homepage/fullmoon.png"></a>
-              <span class="phase-name">Full Moon</span>
+              <img class="scroll-content selected"src="../homepage/fullmoon.png"></a>
+              <!-- <span class="phase-name">Full Moon</span> -->
             </li>
             <li><a href="../waning-gibbous/index.html">
-              <img class="scroll-content"src="../homepage/waninggibbous.png"></a>
+              <img class="scroll-content selected"src="../homepage/waninggibbous.png"></a>
               <!-- <span class="phase-name">Waning Gibbous</span> -->
             </li>
             <li><a href="../third-quarter/index.html">
-              <img class="scroll-content"src="../homepage/thirdquarter.png"></a>
+              <img class="scroll-content selected"src="../homepage/thirdquarter.png"></a>
               <!-- <span class="phase-name">Third Quarter</span> -->
             </li>
             <li><a href="../waning-crescent/index.html"></a>
-              <img class="scroll-content"src="../homepage/waningcrescent.png">
+              <img class="scroll-content selected"src="../homepage/waningcrescent.png">
               <!-- <span class="phase-name">Waning Crescent</span> -->
             </li>
             <li><a href="../twilight/index.html">
-              <img class="scroll-content"src="../homepage/newmoon.png"></a>
+              <img class="scroll-content selected"src="../homepage/newmoon.png"></a>
               <!-- <span class="phase-name">New Moon</span> -->
             </li>
           </ul>
@@ -63,74 +63,98 @@
           </div>
         </div>
     </div>
-    <!-- JavaScript added here for endless vertical side-scrolling bar-->
+
     <script>
-  // Function to add items when the user scrolls
-  //function addItems() {
-  // const container = document.getElementById('scrollContainer');
-
-  //  for (let i = 9; i <= 16; i++) { //starting from 9, adding after last moon phase
-  //    //creates and appends new items
-  //    const newItem = document.createElement('li'); //added items will be created within the same list scroll container
-  //   newItem.className = 'scroll-content';
-
-  //    const newLink = document.createElement('a'); //added an (a element) around the image, to make images clickable.
-  //    newLink.href = '#'
-
-  //   const newImage = document.createElement('img');
-
-      //used ChatGPT for how to use js to correctly add new images with different sources.
-      if (i ===  9) { 
-      newImage.src = `newmoon.png`;
-      } else if (i ===10) {
-      newImage.src = `entry1.png`;
-      } else if (i === 11) {
-      newImage.src = `firstquarter.png`;
-      } else if (i === 12) {
-      newImage.src = `waxinggibbous.png`;
-      } else if (i === 13) {
-      newImage.src = `fullmoon.png`;
-      } else if (i === 14) {
-      newImage.src = `waninggibbous.png`;
-      } else if (i === 15) {
-      newImage.src = `thirdquarter.png`;
-      } else if (i === 16) {
-      newImage.src = `waningcrescent.png`;
+    // Used ChatGPT to 
+      function addItems() {
+        const container = document.getElementById('scrollContainer');
+        const originalItems = document.querySelectorAll('.scroll-content.selected');
+    
+        originalItems.forEach(item => {
+          const clone = item.cloneNode(true);
+          const link = item.parentElement.cloneNode(true); //To add the original links to the cloned images
+          clone.appendChild(link); //will clone the selected content and its parent link when creating the duplicate images within the scroll container
+          container.querySelector('ul').appendChild(clone);
+        });
       }
     
-      newLink.appendChild(newImage);
-      newItem.appendChild(newLink);
-      container.querySelector('ul').appendChild(newItem); // Append the new item within the existing container
-      
-  
-   // Add initial items
-   addItems();
-
-  // Attach the function to the scroll event
-  document.getElementById('scrollContainer').addEventListener('scroll', function() {
-    const container = this;
-
-    // Check if the user has reached the bottom of the container
-    if (container.scrollTop + container.clientHeight >= container.scrollHeight) {
-      // Add more items when the bottom is reached
+      // Add initial items
       addItems();
-    }
-  });
-
-
-  // separate javascript for fixed side column
-  
-    function showContent(phase) {
-      var content = document.getElementById('mainColumn');
-      // Replace content based on the moon phase clicked
-      if (phase === 'twilight') {
-        content.innerHTML = "https://gamal491.github.io/harmonic-collection/twilight/";
-      } else if (phase === 'entry1') {
-        content.innerHTML = "<h2>Full Moon</h2><p>Description of the full moon phase.</p>";
+    
+      function scrollFunction() {
+        const container = this;
+        const bottom = container.scrollTop + container.clientHeight >= container.scrollHeight;
+    
+        if (bottom) {
+          // Move scroll back to the top
+          container.scrollTop = 0;
+          // Duplicate original content again
+          addItems();
+        }
       }
-      // Add more conditions for other moon phases 
-    }
+    
+      // Attach the function to the scroll event
+      document.getElementById('scrollContainer').addEventListener('scroll', scrollFunction);
     </script>
 
+
+    <!-- <script>
+      function addItems() {
+        const container = document.getElementById('scrollContainer');
+    
+        for (let i = 10; i <= 17; i++) {
+          const newItem = document.createElement('li');
+          newItem.className = 'scroll-content';
+    
+          const newLink = document.createElement('a');
+          newLink.href = '#';
+    
+          const newImage = document.createElement('img');
+    
+          if (i === 10) {
+            newImage.src = 'entry1.png';
+          } else if (i === 11) {
+            newImage.src = 'firstquarter.png';
+          } else if (i === 12) {
+            newImage.src = 'waxinggibbous.png';
+          } else if (i === 13) {
+            newImage.src = 'fullmoon.png';
+          } else if (i === 14) {
+            newImage.src = 'waninggibbous.png';
+          } else if (i === 15) {
+            newImage.src = 'thirdquarter.png';
+          } else if (i === 16) {
+            newImage.src = 'waningcrescent.png';
+          } else if (i === 17) {
+            newImage.src = 'newmoon.png';
+            // Add more conditions for other images
+          }
+    
+          newLink.appendChild(newImage);
+          newItem.appendChild(newLink);
+          container.querySelector('ul').appendChild(newItem);
+        }
+      }
+    
+      // Add initial items
+      addItems();
+    
+      // Remove scroll event listener after initial addition of items
+      document.getElementById('scrollContainer').removeEventListener('scroll', scrollFunction);
+    
+      function scrollFunction() {
+        const container = this;
+    
+        // Check if the user has reached the bottom of the container
+        if (container.scrollTop + container.clientHeight >= container.scrollHeight) {
+          // Add more items when the bottom is reached
+          addItems();
+        }
+      }
+    
+      // Attach the function to the scroll event
+      document.getElementById('scrollContainer').addEventListener('scroll', scrollFunction);
+    </script> -->
     </body>
-  </html>
+    </html>
+    
