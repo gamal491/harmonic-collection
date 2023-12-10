@@ -48,11 +48,14 @@ body {
 
   #main-column .byline {
     font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+
   }
 
   #main-column .caption {
     font-size: 17px;
     margin-top: .25em;
+    font-family:'Courier New', Courier, monospace;
   }
 
 h1{
