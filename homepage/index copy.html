@@ -19,35 +19,35 @@
               <!-- <span class="phase-name">New Moon</span> -->
               </li>
             <li><a href="../entry1/index.html">
-              <img class="scroll-content"src="../homepage/entry1.png"></a>
+              <img class="scroll-content selected"src="../homepage/entry1.png"></a>
               <!-- <span class="phase-name">Waxing Crescent</span> -->
             </li>
             <li><a href="../entry-5/index.html">
-              <img class="scroll-content"src="../homepage/firstquarter.png"></a>
+              <img class="scroll-content selected"src="../homepage/firstquarter.png"></a>
               <!-- <span class="phase-name">First Quarter</span> -->
             </li>
             <li><a href="../waxinggibbous/index.html">
-              <img class="scroll-content"src="../homepage/waxinggibbous.png"></a>
+              <img class="scroll-content selected"src="../homepage/waxinggibbous.png"></a>
               <!-- <span class="phase-name">Waxing Gibbous</span> -->
             </li>
             <li><a href="../full-moon/index.html">
-              <img class="scroll-content"src="../homepage/fullmoon.png"></a>
+              <img class="scroll-content selected"src="../homepage/fullmoon.png"></a>
               <!-- <span class="phase-name">Full Moon</span> -->
             </li>
             <li><a href="../waning-gibbous/index.html">
-              <img class="scroll-content"src="../homepage/waninggibbous.png"></a>
+              <img class="scroll-content selected"src="../homepage/waninggibbous.png"></a>
               <!-- <span class="phase-name">Waning Gibbous</span> -->
             </li>
             <li><a href="../third-quarter/index.html">
-              <img class="scroll-content"src="../homepage/thirdquarter.png"></a>
+              <img class="scroll-content selected"src="../homepage/thirdquarter.png"></a>
               <!-- <span class="phase-name">Third Quarter</span> -->
             </li>
-            <li><a href="../waning-crescent/index.html">
-              <img class="scroll-content"src="../homepage/waningcrescent.png"></a>
+            <li><a href="../waning-crescent/index.html"></a>
+              <img class="scroll-content selected"src="../homepage/waningcrescent.png">
               <!-- <span class="phase-name">Waning Crescent</span> -->
             </li>
             <li><a href="../twilight/index.html">
-              <img class="scroll-content"src="../homepage/newmoon.png"></a>
+              <img class="scroll-content selected"src="../homepage/newmoon.png"></a>
               <!-- <span class="phase-name">New Moon</span> -->
             </li>
           </ul>
@@ -63,13 +63,12 @@
           </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- <script>
+    <script>
     // Used ChatGPT to clone the original items and append them to the end of the container when scrolling reaches the bottom
       function addItems() {
         const container = document.getElementById('scrollContainer');
-        const originalItems = document.querySelectorAll('.selected');
+        const originalItems = document.querySelectorAll('.scroll-content.selected');
     
         originalItems.forEach(item => {
           const clone = item.cloneNode(true);
@@ -78,29 +77,28 @@
           container.querySelector('ul').appendChild(clone);
         });
       }
-
     
-      // function scrollFunction() {
-      //   const container = document.getElementById('scrollContainer');
-      //   const bottom = container.scrollTop + container.clientHeight >= container.scrollHeight;
+      // Add initial items
+      addItems();
     
-      //   if (bottom) {
-      //     // Move scroll back to the top
-      //     container.scrollTop = 0;
-      //     // Duplicate original content again
-      //     addItems();
-      //   }
-      // }
+      function scrollFunction() {
+        const container = this;
+        const bottom = container.scrollTop + container.clientHeight >= container.scrollHeight;
+    
+        if (bottom) {
+          // Move scroll back to the top
+          container.scrollTop = 0;
+          // Duplicate original content again
+          addItems();
+        }
+      }
     
       // Attach the function to the scroll event
-      document.getElementById('scrollContainer').addEventListener('scroll', function(){
-        // console.log(document.querySelector('.selected').scrollTop);
-
-      });
-    </script> -->
+      document.getElementById('scrollContainer').addEventListener('scroll', scrollFunction);
+    </script>
 
 
-    <script>
+    <!-- <script>
       function addItems() {
         const container = document.getElementById('scrollContainer');
     
@@ -109,52 +107,43 @@
           newItem.className = 'scroll-content';
     
           const newLink = document.createElement('a');
-          
+          newLink.href = '#';
     
           const newImage = document.createElement('img');
-      
     
           if (i === 10) {
             newImage.src = 'entry1.png';
-            newLink.href = '../entry1/index.html';
           } else if (i === 11) {
             newImage.src = 'firstquarter.png';
-            newLink.href = '../entry-5/index.html';
           } else if (i === 12) {
             newImage.src = 'waxinggibbous.png';
-            newLink.href = '../waxinggibbous/index.html';
           } else if (i === 13) {
-            newImage.src = '../homepage/fullmoon.png';
-            newLink.href = '../full-moon/index.html';
+            newImage.src = 'fullmoon.png';
           } else if (i === 14) {
-            newImage.src = '../homepage/waninggibbous.png';
-            newLink.href = '../waning-gibbous/index.html';
+            newImage.src = 'waninggibbous.png';
           } else if (i === 15) {
-            newImage.src = '../homepage/thirdquarter.png';
-            newLink.href = '../third-quarter/index.html';
+            newImage.src = 'thirdquarter.png';
           } else if (i === 16) {
-            newImage.src = '../homepage/waningcrescent.png';
-            newLink.href = '../waning-crescent/index.html';
+            newImage.src = 'waningcrescent.png';
           } else if (i === 17) {
-            newImage.src = '../homepage/newmoon.png';
-            newLink.href = '../twilight/index.html';
+            newImage.src = 'newmoon.png';
+            // Add more conditions for other images
           }
     
           newLink.appendChild(newImage);
           newItem.appendChild(newLink);
           container.querySelector('ul').appendChild(newItem);
-
-        
         }
       }
     
-    
+      // Add initial items
+      addItems();
     
       // Remove scroll event listener after initial addition of items
       document.getElementById('scrollContainer').removeEventListener('scroll', scrollFunction);
     
       function scrollFunction() {
-        const container = document.querySelector(".scroll-container");
+        const container = this;
     
         // Check if the user has reached the bottom of the container
         if (container.scrollTop + container.clientHeight >= container.scrollHeight) {
@@ -165,7 +154,7 @@
     
       // Attach the function to the scroll event
       document.getElementById('scrollContainer').addEventListener('scroll', scrollFunction);
-    </script> 
+    </script> -->
     </body>
     </html>
     
